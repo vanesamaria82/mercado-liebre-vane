@@ -1,0 +1,329 @@
+* {
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+        margin: auto;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+    margin: auto; 
+    padding: 16px; 
+}
+main {
+    width: 90%;
+    
+    
+}
+body {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    
+}
+.compra {
+    text-align: center;
+}
+li {
+    list-style-type: none;
+    text-align: left;
+
+}
+
+.cajas {
+    padding: 10px;
+    width: 100%;   
+    margin: auto;
+}
+
+.imagenes {
+    width: 100%;
+    text-align: center;
+    margin: auto; 
+    margin-bottom: 30px;
+}
+
+.caja2{
+    text-align: left;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+.titulos {
+    font-size: 24px;
+    width: 100%;
+}
+
+.precio-desc {
+    display: flex;
+    justify-content: flex-start; 
+
+}
+.precios {
+    font-size: 18px;
+    display: flex; 
+    flex-grow: 0,3;
+    padding: 5%; 
+    
+    
+}
+.descuentos {
+    font-size: 16px;
+    color: #39b54a; 
+    display: flex;
+    flex-grow: 0,7;
+    align-self: flex-end;
+    padding: 5%;
+}
+.descripcion {
+    font-size: 16px;
+    color:  #666; 
+    display: none;
+}
+
+
+.fa-truck {
+    color: #39b54a; 
+    text-align: center;
+    margin: 0px;
+    box-sizing: border-box; 
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 1px solid  #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    right: 15px;
+}
+
+
+.img-banner {
+    width: 100%;
+    margin: auto;
+}
+
+.menu {
+    display: none;
+  
+}
+
+.burger-menu {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: auto; 
+    width: 50%;
+    padding: 10px;
+   
+}
+
+   .fa-bars{
+    background-color: #1259c3;;
+    color: white;
+    padding: 10px; 
+    border-radius: 15%;
+}
+
+
+.login {
+    display: none;
+}
+
+.pie {
+    text-align: center;
+    margin-bottom: 20px;
+ 
+}
+
+.logo{
+    width: 50%;
+    display: block; 
+    margin: 5%; 
+    padding-top: 5%;
+    
+  
+}
+.barra-busqueda {
+    display: flex; 
+    width: 100%;
+    flex-grow: 0,5;
+    align-self: center;
+    justify-content: center;
+  
+}
+
+.lupa {
+    background-color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.barra-lupa {
+    display: flex;
+    width: 80%;
+    
+}
+.encabezado {
+    display: flex;
+    width: 100%;
+    padding-top: 0%;
+}
+
+
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3; 
+    transition: color 1ms;
+}
+
+.fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover {
+    color: #39b54a; 
+}
+
+h3 {
+    padding-bottom: 10px;
+}
+
+.cajas {
+    margin: 10px
+}
+
+.formulario {
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 5%;
+    width: 50%;
+    margin: 5%;
+}
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+       
+    }
+
+    .arriba {
+        display: flex;
+    }
+    
+    .login-1, .login-2 {
+        
+        display: flex;
+        gap: 16px;
+    }
+    .burger-menu {
+        display: none;
+    }
+    
+    .descripcion {
+        display: block;
+        font-size: 1.5rem;
+        opacity: 0%;
+        transition: color 1ms;
+    }
+
+    .descripcion:hover {
+        opacity: 100%;
+
+    }
+    .login {
+        display: none;
+    }
+    .cartas {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+        justify-content: space-between;
+       
+    
+    }    
+    .cajas {
+        box-shadow: 0px 0px 0px ;
+        width: 40%;
+        justify-content: center;
+        transition-property: box-shadow width;
+        transition-duration: 1ms 1ms;
+                   
+    }
+
+    .cajas:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 44%;
+    }
+
+    .login {
+        display: flex;
+    }
+    ul {
+        display: flex;
+        
+    }
+    .pie-pagina {
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-truck{
+    transform : rotate(0deg);
+    transition: transform 1ms;
+   
+}
+
+.fa-truck:hover {   
+    transform: rotate(-90deg);
+    
+}
+}
+
+@media ( min-width: 1024px) {
+ 
+
+    .burger-menu {
+        display: none;
+    }
+    .login {
+        display: block;
+    }
+    .descripcion {
+        display: block;
+        font-size: 1.5rem;
+    }
+    .encabezado{
+        display: flex;
+    }
+    .cajas {
+        width: 21%;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-shadow: 0px 0px 0px ;
+        transition-property: box-shadow width;
+        transition-duration: 1ms 1ms;
+    }
+    .cajas:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 24%;
+    }
+
+    .login {
+        display: flex;
+    }
+    .precio-desc {
+        justify-content: center;
+    }
+
+  
+} 
+
+

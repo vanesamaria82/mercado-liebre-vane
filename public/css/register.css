@@ -1,0 +1,222 @@
+* {
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+        margin: auto;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+    margin: auto; 
+    padding: 16px; 
+   
+}
+main {
+    width: 90%;
+}
+body {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    
+}
+.compra {
+    text-align: center;
+}
+li {
+    list-style-type: none;
+    text-align: left;
+
+}
+
+.menu {
+    display: none;
+  
+}
+
+.burger-menu {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: auto; 
+    width: 50%;
+    padding: 10px;
+   
+}
+
+   .fa-bars{
+    background-color: #1259c3;;
+    color: white;
+    padding: 10px; 
+    border-radius: 15%;
+}
+
+
+.login {
+    display: none;
+}
+
+.pie {
+    text-align: center;
+    margin-bottom: 20px;
+ 
+}
+
+.logo{
+    width: 50%;
+    display: block; 
+    margin: 5%; 
+    padding-top: 5%;
+    
+  
+}
+.barra-busqueda {
+    display: flex; 
+    height: 15%;
+    width: 100%;
+    flex-grow: 0,5;
+    align-self: center;
+    justify-content: center;
+}
+
+.lupa {
+    background-color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.barra-lupa {
+    display: flex;
+    width: 80%;
+}
+.encabezado {
+    display: flex;
+    width: 100%;
+    padding-top: 0%;
+}
+
+
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3; 
+    transition: color 1ms;
+}
+
+.fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover {
+    color: #39b54a; 
+}
+
+h3 {
+    padding-bottom: 10px;
+}
+
+
+.formulario {
+    background-color: #EAC926;
+    opacity: 80%; 
+    padding: 20px;
+    border-radius: 5%;
+    width: 90%;
+    margin: 5%;
+    font-size: 1.2rem;
+}
+
+div {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+}
+
+.barra {
+    width: 80%;
+    border-radius: 5%;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgb (100, 100, 100)
+}
+
+.boton {
+    width: 30%;
+    height: 20%;
+    background-color: #1259c3;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+input {
+    font-size: 100%;
+   
+}
+
+
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+       
+    }
+
+    .arriba {
+        display: flex;
+    }
+    
+    .login-1, .login-2 {
+        
+        display: flex;
+        gap: 16px;
+    }
+    .burger-menu {
+        display: none;
+    }
+    
+   
+    .login {
+        display: none;
+    }
+   
+
+    .login {
+        display: flex;
+    }
+    ul {
+        display: flex;
+        
+    }
+    .pie-pagina {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media ( min-width: 1024px) {
+ 
+    .burger-menu {
+        display: none;
+    }
+    .login {
+        display: block;
+    }
+   
+    .encabezado{
+        display: flex;
+    }
+   
+    .login {
+        display: flex;
+    }
+   
+} 
+
+
+
+
